@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="myApp/style.css/GhidStyle.css">
+    <script async defer src="myApp/signup.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f6b9b8da31.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="fundal">
+      <div class="container">
+        <nav>
+          <ul>
+              <li><a class="nav-link" aria-current="page" href="home">Home</a></li>
+              <li><a class="nav-link" href="produse">Produse Duolife</a></li>
+              <li><a class="nav-link" href="ghid">Ghid înscriere Duolife</a></li>
+          </ul>
+        </nav>
+        <div>
+          <button
+          type="button"
+          class="buton"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          id="loginButton"
+        >
+          Login
+        </button>
+        <!-- Button trigger modal SIGN-UP -->
+        <button
+          type="button"
+          class="buton"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModalSignup"
+          id="signupButton"
+        >
+          Sign-up
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Modal LOGIN -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login form</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="login">
+            <div class="mb-3">
+              <label for="exampleInputUserName" class="form-label"
+                >User name:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputUserName"
+                name="userName"
+                aria-describedby="emailHelp"
+              />
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password:</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                name="userPass"
+              />
+            </div>
+          
+            <button type="submit" class="btn btn-success">Login</button>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal SIGN_UP -->
+  <div
+    class="modal fade"
+    id="exampleModalSignup"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SIGN-UP form</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form id="signUpForm" method="POST" action="signup">
+            <div class="mb-3">
+              <label for="exampleInputUserName" class="form-label"
+                >User name:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputSignUpName"
+                name="signUpName"
+                aria-describedby="emailHelp"
+              />
+              
+            </div>
+            <div class="mb-3">
+              <label for="signUpPass1" class="form-label"
+                >Password:</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="signUpPass1"
+                name="signUpPass1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="signUpPass2" class="form-label"
+                >Re-type password:</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="signUpPass2"
+                name="signUpPass2"
+              />
+            </div>
+          
+            <button type="submit" class="btn btn-success">Sign-up</button>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+    <h2 class="title">Cum mă înscriu la DuoLife?</h2>
+    <hr style="color:rgba(87,71,10)"/>
+    <hr class="border border-3 opacity-75">
+    <div class="txt">
+    <p style="color:rgba(87,71,10)"><b>Puteti deveni parteneri DuoLife prin plasarea unei comenzi direct pe site-ul producătorului Duolife si introducand id-ul: emiliamereu.myduolife.com</b></p>
+      <p>In primul pas, completati cu atentie datele dvs. personale, va stabiliti denumirea propriului magazin online (biroul dvs. virtual), dupa care realizati comanda si o achitati cu cardul.Va putem ghida in acest proces, sunati la 0765 265 004 si va insotim in procesul de inregistrare.</p>
+  </div>
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="myApp/img/bun.png" height="310" display="block" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="myApp/img/cons7.png" height="310" display="block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="myApp/img/maini2.png" height="310" display="block" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+  </div>
+          <div class="cont">
+      <p>Puteti alege sa deveniti un client preferat si sa va achizitionati produsele cu un discount mediu, pe viata, comandand produse de minim 250 puncte valorice (fiecare produs are echivalent un punctaj, vizibil in cosul de cumparaturi).</p>
+      <p>Sau puteti alege sa deveniti Club Membru (partener) in dezvoltarea afacerii cu produsele DuoLife, plasand prima comanda in valoare de 500 puncte valorice. In aceasta situatie, veti beneficia de discountul maxim incepand de la a doua comanda, si, mai mult, veti beneficia de toate bonusurile planului de compensare pus la dispozitia partenerilor de compania DuoLife. </p>
+      <p>Ne puteti contacta oricand la numarul de telefon 0765 265 004 pentru a va oferi consultanta gratuita si sprijin in inrolarea dumneavoasta in sistemul DuoLife.</p>
+      </div>
+      <h3>Te asteptam in echipa!</h3>
+  
+      <div class="footer">
+        <div class="col-1">
+        <p>Emilia MEREU</p>
+        </div>
+        <div class="col-2">
+          <h4>HAI IN ECHIPA DUOLIFE</h4>
+          <p>0765265004</p>
+        </div>
+        <div class="col-3">
+          <h4>ID MEMBRU</h4>
+          <p>157435</p>
+        </div>
+      </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

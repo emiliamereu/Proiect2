@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="myApp/style.css/MyStyle.css">
+    <script async defer src="myApp/signup.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f6b9b8da31.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="fundal">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="myApp/img/fiecare.mp4" type="video/mp4">
+      </video>
+      <div class="container">
+        <nav class="home">
+          <ul>
+            <li><a class="nav-link" aria-current="page" href="home">Home</a></li>
+              <li><a class="nav-link" href="produse">Produse Duolife</a></li>
+              <li><a class="nav-link" href="ghid">Ghid înscriere Duolife</a></li>
+          </ul>
+        </nav>
+
+        <button
+        type="button"
+        class="buton"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        id="loginButton"
+      >
+        Login
+      </button>
+      <!-- Button trigger modal SIGN-UP -->
+      <button
+        type="button"
+        class="buton"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModalSignup"
+        id="signupButton"
+      >
+        Sign-up
+      </button>
+
+  
+
+
+
+    </div>
+      <div class="row">
+        <div class="box">
+          <a href="duolife"><p>Bonusuri financiare</p></a>
+          <a href="afacere"><p>Afacerea Duolife</p></a>
+
+
+
+  
+
+
+          
+
+  <!-- <div class="topnav">
+    <input type="text" placeholder="Search..">
+  </div> -->
+
+        </div> 
+        </div>
+      </div>
+    </div>
+  <!-- Modal LOGIN -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login form</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="login">
+            <div class="mb-3">
+              <label for="exampleInputUserName" class="form-label"
+                >User name:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputUserName"
+                name="userName"
+                aria-describedby="emailHelp"
+              />
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password:</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                name="userPass"
+              />
+            </div>
+          
+            <button type="submit" class="btn btn-success">Login</button>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <!-- Modal SIGN_UP -->
+  <div
+    class="modal fade"
+    id="exampleModalSignup"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SIGN-UP form</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form id="signUpForm" method="POST" action="signup">
+            <div class="mb-3">
+              <label for="exampleInputUserName" class="form-label"
+                >User name:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputSignUpName"
+                name="signUpName"
+                aria-describedby="emailHelp"
+              />
+              
+            </div>
+            <div class="mb-3">
+              <label for="signUpPass1" class="form-label"
+                >Password:</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="signUpPass1"
+                name="signUpPass1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="signUpPass2" class="form-label"
+                >Re-type password:</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="signUpPass2"
+                name="signUpPass2"
+              />
+            </div>
+          
+            <button type="submit" class="btn btn-success">Sign-up</button>
+          </form>
+        </div>
+
+
+        
+  
+      </div>
+    </div>
+  </div>
+    <!-- <div class="container">
+      <div class="row mt-5">
+        <h1>Content</h1>  
+        {{mainContent}}
+    </div>
+    </div> -->
+    <div id="container">
+
+        <p id="p2">
+        <span>Profită de promoții, de
+          prezentări și de cursuri ale experților, de tururile motivaționale precum
+          și de oportunitatea de a câștiga datorită cumpărăturilor, pe care le vor
+          face alte persoane în magazinul tău DuoLife de pe internet.
+        </span>
+          <br></p>
+          <p id="p3">
+        <span>  
+          Alătură-te ca Membru al Clubului și obține acces la produsele
+          excepționale DuoLife, ideale atât pentru tine, cât și pentru apropiații
+          tăi, cu reduceri de până la 40%, plus multe alte avantaje.
+      </span></p>
+      </div>
+    </div>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="myApp/img/portocale.jpg" width="450" height="345" display="block" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="myApp/img/pahar.jpg" width="450" height="345" display="block" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="myApp/img/papaya.jpg" width="450" height="345" display="block" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <hr style="color:rgba(87,71,10)"/>
+    <hr class="border border-3 opacity-75">
+      <h1>Modelul de afacere</h1>
+    <div class="continut">
+      
+      <p>
+        De ceva timp observăm schimbările dinamice care au loc în economie.
+        Forma sa actuală este, printre altele, mult influențată de dezvoltarea
+        tehnologică și teleinformatică rapidă, ceea ce facilitează în mod
+        semnificativ nu numai munca, ci și viața de zi cu zi. Lumea devine din
+        ce în ce mai uniformă: frontierele au încetat practic să existe, iar
+        monedele comune, legislația și reglementările care sunt în vigoare
+        facilitează acest proces într-o mare măsură. Se face referire la lume
+        din ce în ce mai mult ca la Satul Global. 
+        <br>
+        Un concept relativ nou al Noii
+        Economii poate fi asociat cu acest lucru. Structurile Organizaționale se
+        reduc în cadrul companiilor și este din ce în ce mai dificil pentru
+        angajați să fie promovați. Experții indică faptul că oamenii vor schimba
+        locurile de muncă la fiecare 4-5 ani, iar la fiecare 7 ani, în medie,
+        își vor schimba întregul domeniu de activitate. Acesta este motivul
+        pentru care conceptul de McWork a prins deja rădăcini. 
+        <br>
+        Afacerile,
+        conducerea, marketingul și economia se schimbă rapid. În 2014, Robert D.
+        Hof a scris pentru revista săptămânală Business Week că "Tot , ce
+        credeam că știm despre afaceri, este acum pus la îndoială". În termeni
+        economici, această situație este o mare oportunitate, dar, pe de altă
+        parte și o mare provocare: cuvântul "competiție" are un nou înțeles. Ca
+        urmare, experții caută în mod constant soluții noi, mai bune> care să
+        permită tuturor să genereze venituri, menținând în același timp un stil
+        de viață sănătos. Un aspect important este de asemenea găsirea unei
+        modalități de a câștiga bani care vă oferă siguranță pe termen lung.
+      </p>
+    </div>
+    <div class="table">
+      <p>
+        O revoluție în gândirea despre afaceri
+        De mai mulți ani, am cunoscut soluții precum afacerile clasice, corporații, francize sau marketing pe mai multe niveluri. Toate acestea au multe avantaje, dar și dezavantaje, care în prezent par a fi chiar mai problematice. SoftMarketing ™ apare din această realitate nouă: o revoluție în gândirea despre afaceri. Acest model combină cele mai bune practici din toate aceste domenii, eliminând în același timp punctele slabe.
+        
+        SoftMarketing ™, indicat prin afacerea secolului 21 sau chiar a secolului 22, este un răspuns la cerințele pieței dinamice în schimbare și oferă o alternativă pentru oamenii de afaceri și angajații cu normă întreagă. 
+      </p>
+      <img src="myApp/img/free3.png" width="200px" height="300px" alt="PozaPromotionala"/>
+      <p>Pentru antreprenori, este adesea o oportunitate de a-și extinde activitatea în cadrul profilului lor de bază. Pentru ambele grupuri poate fi o sursă de venit constantă sau suplimentară, fără a fi nevoie să renunțe la o activitate profesională anterioară și, în plus, nu necesită implicarea unor resurse umane noi sau a unor cheltuieli financiare exorbitante.
+        <br>
+        Principalele ipoteze ale
+        SoftMarketingului™ la DuoLife
+        Sectorul sănătate are o creștere anuală de aproximativ 30%.
+        Bazat pe SoftMarketing ™, DuoLife se dezvoltă de multe ori mai repede, atrăgând oameni din medii diferite și cu o situație materială diferită. </p>
+    </div>
+    <div class="footer">
+      <div class="col-1">
+      <p>Emilia MEREU</p>
+      </div>
+      <div class="col-2">
+        <h4>HAI IN ECHIPA DUOLIFE</h4>
+        <p>0765265004</p>
+      </div>
+      <div class="col-3">
+        <h4>ID MEMBRU</h4>
+        <p>157435</p>
+      </div>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

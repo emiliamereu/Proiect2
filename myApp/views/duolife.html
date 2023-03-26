@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="myApp/style.css/Duolife.css">
+    <script async defer src="myApp/signup.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f6b9b8da31.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="fundal">
+      <div class="container">
+        <nav>
+          <ul>
+              <li><a class="nav-link" aria-current="page" href="home">Home</a></li>
+              <li><a class="nav-link" href="produse">Produse Duolife</a></li>
+              <li><a class="nav-link" href="ghid">Ghid înscriere Duolife</a></li>
+          </ul>
+        </nav>
+        <div>
+          <button
+          type="button"
+          class="buton"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          id="loginButton"
+        >
+          Login
+        </button>
+        <!-- Button trigger modal SIGN-UP -->
+        <button
+          type="button"
+          class="buton"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModalSignup"
+          id="signupButton"
+        >
+          Sign-up
+        </button>
+      </div>
+    </div>
+  </nav>
+</div>
+  <!-- Modal LOGIN -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login form</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="login">
+            <div class="mb-3">
+              <label for="exampleInputUserName" class="form-label"
+                >User name:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputUserName"
+                name="userName"
+                aria-describedby="emailHelp"
+              />
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password:</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                name="userPass"
+              />
+            </div>
+          
+            <button type="submit" class="btn btn-success">Login</button>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal SIGN_UP -->
+  <div
+    class="modal fade"
+    id="exampleModalSignup"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SIGN-UP form</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form id="signUpForm" method="POST" action="signup">
+            <div class="mb-3">
+              <label for="exampleInputUserName" class="form-label"
+                >User name:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputSignUpName"
+                name="signUpName"
+                aria-describedby="emailHelp"
+              />
+              
+            </div>
+            <div class="mb-3">
+              <label for="signUpPass1" class="form-label"
+                >Password:</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="signUpPass1"
+                name="signUpPass1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="signUpPass2" class="form-label"
+                >Re-type password:</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="signUpPass2"
+                name="signUpPass2"
+              />
+            </div>
+            <button type="submit" class="btn btn-success">Sign-up</button>
+          </form>
+        </div>
+        </div>
+    </div>
+    </div>
+    <h2 class="title">Planul de compensare financiara</h2>
+    <hr style="color:rgba(87,71,10)"/>
+    <hr class="border border-3 opacity-75">
+    <p>Fiecare companie promite recompense financiare, insa Duolife promite recompense care reprezinta mai mult decat bani – reprezinta cu adevarat schimbarea obiectivelor si viselor tale! Fie ca iti doresti mai mult timp liber cu familia sau pentru tine, mai multi bani pentru a calatori in lume sau toate cheltuielile platite, Duolife le are pe toate! Aceasta afacere se poate dezvolta foarte simplu: dupa inregistrare beneficiezi de suport si indrumare pentru a obtine rezultatele dorite</p>
+    <p>Ca distribuitor, exista 6 moduri de a castiga:</p>
+    <ul>
+      <li>Profit din vanzare</li>
+      <li>Achizitionare bonus client nou inregistrat</li>
+      <li>Bonus de avans rapid in cariera</li>
+      <li>Comision volum echipa</li>
+      <li>Bonus leadership (sau generatii)</li>
+      <li>Bonus pe structura de reduceri (se calculeaza pana in 7 nivele prin compresie)</li>
+      <li>Reduceri la achizitionare</li>
+      <li>Procent din cifra globala a firmei (incepand de la primul nivel)</li>
+      <li>Programul auto</li>
+      <li>Vacante si calatorii</li>
+      </ul>  
+      <h4>Ce sunt punctele P?</h4>
+      <p>Practic, acestea sunt punctele pe care le colectezi si le transformi in bani. Fiecare produs ofera o anumita valoare in numar de puncte. Numarul de puncte se va schimba in functie de valoarea de vanzare a produsului, denumite puncte P (Puncte Volum). De exemplu, o sticla de Vitamina C ofera 50 de puncte P, my blood 100 de puncte P, si asa mai departe.</p>
+      <p>Cum este structurat Planul de Compensare Duolife:</p>
+      <h5>Profit din vanzare</h5>
+      <p>Acestea sunt comisioanele pe care le puteti face prin vanzarea produselor catre proprii dvs clienti. Comisionul din vânzarea cu amănuntul sau adaos-ul, ajungând până la 45 %, în funcție de categoria produsului.
+        <br>De exemplu, puteti achizitiona o sticla de Keratina pentru 155 lei, la care se adauga transportul. Transportul poate fi 1,12 lei daca achizitionati un produs suplimentar din lista sugerata de companie pe langa pachetul sau comanda de 500P, respectiv 250P. Produsul il puteti vinde cu  aproximativ 205 lei, astfel veti avea un castig din profit de aproximativ 55 lei. In cazul in care nu doriti aceasta optiune, cu cat cumparati mai multe produse, transportul se imparte pe numarul de produse.
+        <br>
+        <h5>Achizitie bonus client</h5>
+        <p>Un alt mod minunat de a obtine recompense de la Duolife este din  Bonusul pe Client ( Partener) nou. Cand cineva se va inscrie ca distribuitor sau client, i se va oferi o gama de cateva pachete sau produse pentru inceput. Acestea variaza de la aproximativ 340 lei pentru un pachet de baza, pana la 3400 lei.  Bonusul de achizitiei pentru nou client (Partener)  este comision din marja sau diferenta de pret la produse din prima comanda – pentru fiecare persoana care intra recomandata de catre noi.  Daca acesta isi face o achiziție proprie de minim 250 puncte, persoana care a recomandat-o primește diferenta de pret, de la pretul de prima comanda si pretul de club membru pe care îl plătim începând de la a doua comanda.
+          <br>
+          <br>
+          Noii distribuitori care doresc sa dezvolte afacerea sunt incurajati sa cumpere un pachete Business, deoarece acestea pot genera cel putin 500 de puncte P, pentru a deveni un distribuitor calificat. Fiecarui pachet i se atribuie diferite puncte P</p>
+                <p><b>Vanzarea a 10 produse intr-o saptamana , reprezinta un profit saptamanal de aproximativ 550 lei.</b></p>
+    <h5>Comision din reduceri</h5>
+<p>Fiecare persoana pe care o recomandam, este plasată în Structura Carierei, iar apoi in Structura de Reduceri. Acesta se plateste astfel :</p>  
+<img src="myApp/img/plan2.png" alt="poza Promotionala";>
+<br>
+<br>
+<h5>Comision echipa</h5>
+<p>In primul rand, pentru acest pas trebuie sa fi cel putin distribuitor calificat. Vei fi platit cu un comision de volum pentru echipa incepand cu nivelul 3 de cariera ,Team Leader,  de fiecare data cand echipa genereaza un rulaj de puncte P. Una din conditii este sa ai 3 linii active( sa ai comanda de minim 500 P pe cele 3 linii)
+  Gandeste-te ca ai o echipa. Tu esti coordonatorul, iar sub tine sunt trei distribuitori calificati pe care i-ai recrutat. Avansarea in cariera pentru acest tip de castig se calculeaza pe formula 60/40 (pe linia cea mai puternica se calculeaza 60% si diferenta de 40% se face cu restul liniilor + comanda personala)</p>
+  <p>Procent din structura proprie : începând cu nivelul 3 de carieră se obtine un procent din structura astfel:</p>
+  <ul>
+    <li>Nivelul 3 – 6%</li>
+    <li>Nivelul 4 – 10%</li>
+    <li>Nivelul 5 – 14%</li>
+    <li>Nivelul 6 – 17%</li>
+    <li>Nivelul 7 – 20%</li>
+    <li>Nivelul 8 – 22%</li>
+    <li>Nivelul 9 – 23, 5%</li>
+    <li>Nivelul 10 – 24,5%</li>
+    <li>Nivelul 11 – 25%</li>
+    <li>Nivelul 12- 25,5%</li>
+    <li>Nivelul 13 – 26%</li>
+    </ul> 
+    <br>
+    <img src="myApp/img/Plan.jpg" alt="poza Promotionala";>
+<br>
+
+<div class="footer">
+  <div class="col-1">
+  <p>Emilia MEREU</p>
+  </div>
+  <div class="col-2">
+    <h4>HAI IN ECHIPA DUOLIFE</h4>
+    <p>0765265004</p>
+  </div>
+  <div class="col-3">
+    <h4>ID MEMBRU</h4>
+    <p>157435</p>
+  </div>
+</div>
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

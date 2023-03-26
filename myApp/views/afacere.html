@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="myApp/style.css/Afacere.css">
+    <script async defer src="myApp/signup.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f6b9b8da31.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="fundal">
+      <div class="container">
+        <nav>
+          <ul>
+              <li><a class="nav-link" aria-current="page" href="home">Home</a></li>
+              <li><a class="nav-link" href="produse">Produse Duolife</a></li>
+              <li><a class="nav-link" href="ghid">Ghid înscriere Duolife</a></li>
+          </ul>
+        </nav>
+        <div>
+          <button
+          type="button"
+          class="buton"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          id="loginButton"
+        >
+          Login
+        </button>
+        <!-- Button trigger modal SIGN-UP -->
+        <button
+          type="button"
+          class="buton"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModalSignup"
+          id="signupButton"
+        >
+          Sign-up
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login form</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="login">
+            <div class="mb-3">
+              <label for="exampleInputUserName" class="form-label"
+                >User name:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputUserName"
+                name="userName"
+                aria-describedby="emailHelp"
+              />
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password:</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                name="userPass"
+              />
+            </div>
+          
+            <button type="submit" class="btn btn-success">Login</button>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal SIGN_UP -->
+  <div
+    class="modal fade"
+    id="exampleModalSignup"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SIGN-UP form</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form id="signUpForm" method="POST" action="signup">
+            <div class="mb-3">
+              <label for="exampleInputUserName" class="form-label"
+                >User name:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputSignUpName"
+                name="signUpName"
+                aria-describedby="emailHelp"
+              />
+              
+            </div>
+            <div class="mb-3">
+              <label for="signUpPass1" class="form-label"
+                >Password:</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="signUpPass1"
+                name="signUpPass1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="signUpPass2" class="form-label"
+                >Re-type password:</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="signUpPass2"
+                name="signUpPass2"
+              />
+            </div>
+            <button type="submit" class="btn btn-success">Sign-up</button>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+  <h4 class="title">Din Polonia în întreaga lume, DuoLife garantează calitatea.</h4>
+    <hr style="color:rgba(87,71,10)"/>
+    <hr class="border border-3 opacity-75">
+    <div class="continut">
+      <img src="myApp/img/glob.jpg" alt="PozaPromotionala" />
+  <div >
+    <div class="pret">
+      <h2 style=color:rgba(87,71,10);><b>Viziunea nostră</b></h2>
+      <hr style="color:rgba(87,71,10)"/>
+      <h5 style=color:rgba(87,71,10);><b>De la bun început, viziunea noastră a presupus atingerea piețelor internaționale iar în prezent, membrii DuoLife Club sunt deja activi în 30 de țări din întreaga lume. Nu ne pasă doar de consolidarea poziției noastre de lider, ci mai ales de contribuția la îmbunătățirea standardului stilului de viață și a bunăstării a milioane de oameni din întreaga lume. Zi de zi, suntem din ce în ce mai mulți și toți în acord cu principiul: Din Polonia în întreaga lume.</b></h4>
+    </div>
+      <p>
+        <b style=color:rgba(87,71,10);>Valorile noastre sunt temelia noastră</b>  <p>Cea mai mare valoare în DuoLife sunt Oamenii care lucrează cu noi. Avantajul Nostru este marketingul de consum, care se bazează pe relațiile cu alte persoane și ne permite să ajungem la cei care nu au văzut oportunitatea lor în afaceri până în prezent.</p>
+      </p>
+    </div>
+    </div>
+    <hr style="color:rgba(87,71,10)"/>
+      <div >
+        <h4>Activitatea companiei DuoLife se bazează pe valori de bază precum:</h4>
+        <ul class="text" >
+          <li><b>Integritate: </b>
+            <br> se aplică în cazul fiecăruia dintre noi
+            și celor cu care lucrăm;</li>
+          <li> <b>Parteneriat: </b>
+            <br>lucrul cu oamenii,
+            încredere și sprijin la fiecare pas;</li>
+          <li><b>Relatii: </b>
+            <br>temelia și elementul cheie
+            al existenței și dezvoltării;</li>
+              <li> <b>Integrare: </b><br>training comun,întâlniri, călătorii și evenimente.</li>
+              <img src="myApp/img/comunitate.jpg" alt="PozaPromotionala">
+        </ul> 
+      </div>
+    <h4>Descopera oportunitatea unui business online de succes!</h4>
+      <div class="continut2">
+        <p>Cu DuoLife poti beneficia de produse sanatoase pentru tine si cei apropiati, in timp de iti dezvolti propria afacere online.
+        Club membrii, parteneri DuoLife, au bonusuri si reduceri speciale + diverse cadouri si praguri. O afacere cu adevarat profitabila!
+        </p>
+      </div>
+      <div class="footer">
+        <div class="col-1">
+        <p>Emilia MEREU</p>
+        </div>
+        <div class="col-2">
+          <h4>HAI IN ECHIPA DUOLIFE</h4>
+          <p>0765265004</p>
+        </div>
+        <div class="col-3">
+          <h4>ID MEMBRU</h4>
+          <p>157435</p>
+        </div>
+      </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
